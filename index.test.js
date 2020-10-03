@@ -5,7 +5,7 @@ test('no permitir valores flotantes en las horas', () =>{
 })
 
 test('si son 48 horas o menos de trabajo, no se pagan horas extras', () =>{
-    expect(salario(40,30000)).toEqual({ bruto: 1200000, extra: 0, neto: 1200000 })
+    expect(salario(40,30000).extra).toBe(0)
 })
 
 test('no valores negativos en horas', () =>{
