@@ -11,9 +11,10 @@ function salario(horas, valorHora) {
         }
         informe['neto'] = informe['bruto'] + informe['neto']
         return informe
+    } else{
+        return 'valores invalidos'
     }
 
 }
 
-console.log(salario(40, 30000));
 module.exports = salario
