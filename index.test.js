@@ -23,3 +23,7 @@ test('Solo Valores Numericos en salrio ',()=>{
 test('Calculo del valor a pagar por las horas Extra',()=>{
     expect(salario(49,3000).extra).toBe(3600)
 })
+
+test('Calculo del valor del salario neto',()=>{
+    expect(salario(49,3000).neto).toBe(147600)
+})
