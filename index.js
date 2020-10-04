@@ -4,12 +4,14 @@ function salario(horas, valorHora) {
 
     if (!soloInt.test(horas) || !soloInt.test(valorHora)) return 'valores invalidos'
 
-    if (horas <= 60) {
-        informe['bruto'] = horas * valorHora
+    if (horas <= 60) {        
         if (horas > 48) {
-            informe['extra'] = informe['bruto'] + (valorHora * 0.2) * (horas - 48)
+            informe['bruto'] = 48 * valorHora
+            informe['extra'] =(valorHora * 1.2) * (horas - 48)
+        }else{
+            informe['bruto'] = horas * valorHora
         }
-        informe['neto'] = informe['bruto'] + informe['neto']
+        informe['neto'] = informe['bruto'] + informe['extra']
         return informe
     } else{
         return 'valores invalidos'
