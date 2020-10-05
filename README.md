@@ -32,7 +32,7 @@ npm install
 ## Ejecutar preubas
 
 ```
-npm jest
+npm test
 ```
 
 ## Tecnologias
