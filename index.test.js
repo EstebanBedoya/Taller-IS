@@ -37,5 +37,5 @@ test('Cálculo del valor del salario total neto',()=>{
 })
 
 test('Cálculo del valor del salario sin horas extra (bruto)',()=>{
-    expect(salario(49,3000).neto).toBe(144000)
+    expect(salario(49,3000).bruto).toBe(144000)
 })
