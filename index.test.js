@@ -9,7 +9,7 @@ test('Si son 48 horas o menos de trabajo, no se pagan horas extras', () =>{
 })
 
 test('No se permiten más de 61 horas de trabajo', () =>{
-    expect(salario(61,30000).toMatch('valores invalidos')
+    expect(salario(61,30000)).toMatch('valores invalidos')
 })
 
 test('No se permiten valores negativos en horas', () =>{
